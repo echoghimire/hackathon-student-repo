@@ -6,7 +6,7 @@ compatibility_date = "2024-05-10"
 # Get your KV ID from Cloudflare -> Storage -> KV
 [[kv_namespaces]]
 binding = "AGENT_STORAGE"
-id = "PASTE_YOUR_KV_ID_HERE"
+id = "AGENT_STORAGE"
 
 # [STEP 2] Bind your Brain
 [ai]
