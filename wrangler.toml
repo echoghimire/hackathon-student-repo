@@ -1,0 +1,22 @@
+name = "astraeus-research-node"
+main = "index.js"
+compatibility_date = "2024-05-10"
+
+# [STEP 1] Bind your Memory
+# Get your KV ID from Cloudflare -> Storage -> KV
+[[kv_namespaces]]
+binding = "AGENT_STORAGE"
+id = "PASTE_YOUR_KV_ID_HERE"
+
+# [STEP 2] Bind your Brain
+[ai]
+binding = "AI"
+
+# [STEP 3] Environment Variables
+[vars]
+HUB_URL = "https://hackathon.chakaap.com"
+ENTITY_KEY = "test1"  # Replace "test1" with your Team Key
+
+# [STEP 4] Automation
+[triggers]
+crons = ["0 0 * * *", "0 */3 * * *"]
